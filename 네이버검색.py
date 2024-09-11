@@ -1,7 +1,7 @@
 import requests
 import csv
 import key
-
+# 자료가 부족
 # 네이버 API 클라이언트 ID와 Secret
 client_id = key.getNaverKey()[0]
 client_secret = key.getNaverKey()[1]
