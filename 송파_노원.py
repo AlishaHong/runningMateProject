@@ -32,8 +32,6 @@ nowon_2024_3 = pd.read_csv('data_노원/노원구_오피스텔_2024.csv', encodi
 
 
 
-
-
 # 송파구
 
 df_songpa_2022_1 = pd.DataFrame(songpa_2022_1)
@@ -206,12 +204,12 @@ df_nowon_2024_3 = pd.DataFrame(nowon_2024_3)
 
 # 노원 2024년 
 
-print(df_nowon_2024_1.shape)
-print(df_nowon_2024_1.columns)
-print(df_nowon_2024_2.shape)
-print(df_nowon_2024_2.columns)
-print(df_nowon_2024_3.shape)
-print(df_nowon_2024_3.columns)
+# print(df_nowon_2024_1.shape)
+# print(df_nowon_2024_1.columns)
+# print(df_nowon_2024_2.shape)
+# print(df_nowon_2024_2.columns)
+# print(df_nowon_2024_3.shape)
+# print(df_nowon_2024_3.columns)
 
 # 단독다가구 
 # (2176, 18)
@@ -231,7 +229,19 @@ print(df_nowon_2024_3.columns)
 # 연도별로 합치기 
 # 어떻게 비교하는것이 좋을지 생각해보기 
 
+# print(df_songpa_2022_1.info())
+# 송파_단독다가구
+# 종전계약 보증금/월세 데이터가 있는 행만 뽑아서 구별 보증금/월세 인상률 확인해보기(송파_단독다가구의 경우 1090행)
+# 건축년도 정보가 나름 중요해보이는데 5910/6152 결측치 200개 -> 어떻게 해야 좋을지 
 
+# print(df_songpa_2022_2.info())
+# 송파_연립다세대 
+# 종전계약보증금/월세(6008/18677) 제외하고는 결측치 없음 
+
+# print(df_songpa_2022_3.info())
+# 송파_오피스텔
+# 종전계약보증금/월세(1935/6646)
+# 건축년도(6269/6646)
 
 
 
